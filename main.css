@@ -27,7 +27,8 @@ html {
     font-family: 'Manrope-Regular-h3d';
 }
 body {
-    background-image:url(img/bg.jpg);
+    background-image:url(img/bg2.jpg);
+    background-attachment: fixed;
     background-size:cover;
     background-position:center;
 }
@@ -41,23 +42,39 @@ content #download-list li, content #help-list li {
     padding-bottom:5px;
 }
 
+content #download-list li > a, content #help-list li > a {
+    display:inline-block;
+    background-color:rgba(266, 230, 242, 0.4);
+    padding:15px;
+    margin:5px;
+}
+
+content #download-list li > a:hover, content #help-list li > a:hover {
+    background-color:#f49;
+    font-weight:bold;
+    color:#fff;
+}
+
 content a {
-    color:#70a;
+    color:#a07;
     text-decoration:none;
 }
 content a:hover {
-    color:#e0f;
+    color:#f38;
 }
 
 content {
-    /*background-color:rgba(255, 221, 233, 0.75);*/
-    width:calc(90% - 350px);
+    background-color:rgba(255, 248, 245, 0.94);
+    width:calc(97% - 150px);
+    min-width:300px;
+    max-width:1300px;
     display:block;
     padding:30px;
     padding-top:20px;
     border-radius:20px;
-    margin-top:70px;
-    margin-left:350px;
+    margin-top:90px;
+    margin-left:auto;
+    margin-right:auto;
     color:#0c0303;
 }
 
@@ -69,6 +86,7 @@ content h1:first-of-type {
     font-weight:bold;
     font-size:35px;
     font-family:'PatuaOne-Regular-h3d';
+    line-height:1.2em;
     padding-bottom:15px;
     padding-top:0px;
 }
@@ -80,17 +98,29 @@ html,body{padding:0px; margin:0px;}
 #main-logo {
     width:300px;
     height:auto;
-    left:10px;
+    /*left:10px;
     top:10px;
-    position:absolute;
+    position:absolute;*/
+    display:block;
+    margin:auto;
+}
+
+#main-logo-small {
+    width:100px;
+    height:auto;
+    display:inline-block;
+    float:right;
 }
 
 nav {
     display:block;
     position:absolute;
     top:5px;
-    left:360px;
+    left:0; right:0;
+    min-width:300px;
+    width:90%;
     text-align:center;
+    margin:auto;
 }
 
 nav a {
@@ -101,14 +131,30 @@ nav a {
     padding:5px;
 }
 
-nav li {
-    display:inline-block;
+nav a.here {
+    background-color:#f59;
+    color:#fff;
+    padding-bottom:9px;
+    padding-top:9px;
+    border-radius:3px;
 }
 
-nav li:last-of-type {
-    padding-right:80px;
+nav a:hover, nav a.here:hover {
+    background-color:#f03;
+    color:#fff;
+    padding-bottom:9px;
+    padding-top:9px;
+    border-radius:3px;
 }
+
+nav li {
+    display:inline-block;
+    padding-right:10px;
+}
+
+nav li:last-of-type {padding-right:0px;}
 
 nav ul {
     list-style:none;
+    padding:0px;
 }
