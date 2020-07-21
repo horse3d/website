@@ -28,3 +28,15 @@ ul.promo-code-examples code {
 ul.promo-code-examples li:not(:first-child) {
     padding-top:20px;
 }
+
+content {
+    margin-top:350px !important;
+}
+
+content h1:first-of-type {
+    font-weight:normal !important;
+    font-size:55px !important;
+    position:absolute !important;
+    top:100px !important;
+    color:#f22773d6 !important;
+}

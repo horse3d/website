@@ -25,6 +25,7 @@ html {
     font-size:20px;
     line-height:1.1em;
     font-family: 'Manrope-Regular-h3d';
+    min-width:550px;
 }
 body {
     background-image:url(img/bg2.jpg);
@@ -56,7 +57,7 @@ content #download-list li > a:hover, content #help-list li > a:hover {
 }
 
 content a {
-    color:#a07;
+    color:#660048;
     text-decoration:none;
 }
 content a:hover {
@@ -72,7 +73,7 @@ content {
     padding:30px;
     padding-top:20px;
     border-radius:20px;
-    margin-top:90px;
+    margin-top:100px;
     margin-left:auto;
     margin-right:auto;
     color:#0c0303;
@@ -83,7 +84,7 @@ content:last-of-type {
 }
 
 content h1:first-of-type {
-    font-weight:bold;
+    font-weight:normal;
     font-size:35px;
     font-family:'PatuaOne-Regular-h3d';
     line-height:1.2em;
@@ -95,7 +96,7 @@ h1 {font-size:23px; font-weight:bold;padding-top:12px;padding-bottom:10px;}
 
 html,body{padding:0px; margin:0px;}
 
-#main-logo {
+content #main-logo {
     width:300px;
     height:auto;
     /*left:10px;
@@ -106,20 +107,24 @@ html,body{padding:0px; margin:0px;}
 }
 
 #main-logo-small {
-    width:100px;
+    width:150px;
     height:auto;
-    display:inline-block;
-    float:right;
+    top:0px; left:20px;
+    position:fixed;
+    display:block;
+    margin:auto;
+    z-index:9999;
 }
 
 nav {
     display:block;
-    position:absolute;
-    top:5px;
+    position:fixed;
+    top:0px;
     left:0; right:0;
-    min-width:300px;
-    width:90%;
+    min-width:650px;
+    width:100%;
     text-align:center;
+    background-color:#f9eeeac9;
     margin:auto;
 }
 

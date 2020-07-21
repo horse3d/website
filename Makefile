@@ -5,6 +5,7 @@ all: update-stuff
 
 update-stuff:
 	cp external/horse64/misc/logo.png ./horse64logo.png
+	cp external/horse64/misc/logosmall.png ./horse64logosmall.png
 	#cd external/horse64 && make doc
 	#chown -R 1011:1011 ./api/ || exit 0
 	rm -rf ./Font-Awesome/
