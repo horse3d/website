@@ -6,14 +6,26 @@ ul.promo-code-examples {
     margin:-30px;
     margin-top:5px;
     margin-bottom:5px;
-    padding:15px;
-    padding-left:35px;
-    padding-right:35px;
+    padding:0px;
     list-style:none;
 }
 
 ul.promo-code-examples li {
     display:block;
+    padding:20px;
+    padding-left:35px;
+    padding-right:35px;
+}
+
+ul.promo-code-examples li:nth-child(2n) {
+    background-color:#fbf8f7;
+}
+
+ul.promo-code-examples li::after {
+   content: " ";
+   display: block;
+   height: 0;
+   clear: both;
 }
 
 ul.promo-code-examples code {
@@ -23,6 +35,11 @@ ul.promo-code-examples code {
     display:block;
     background-color:#302;
     color:#ecc;
+    float:right;
+}
+
+ul.promo-code-examples code:first-of-type {
+    margin-top:-4px;
 }
 
 ul.promo-code-examples li:not(:first-child) {
