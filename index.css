@@ -36,6 +36,27 @@ ul.promo-code-examples code {
     background-color:#302;
     color:#ecc;
     float:right;
+    font-size:16px;
+    width:65%;
+    overflow:auto;
+    white-space:pre;
+}
+
+ul.promo-code-examples h3 {
+    display:inline-block;
+    width:30%;
+    font-size:1em;
+    font-weight:normal;
+    padding-bottom:20px;
+    padding-top:0px;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+
+@media (max-width: 750px) {
+    ul.promo-code-examples code {
+        width:95%;
+    }
 }
 
 ul.promo-code-examples code:first-of-type {

@@ -96,16 +96,6 @@ h1 {font-size:23px; font-weight:bold;padding-top:12px;padding-bottom:10px;}
 
 html,body{padding:0px; margin:0px;}
 
-content #main-logo {
-    width:300px;
-    height:auto;
-    /*left:10px;
-    top:10px;
-    position:absolute;*/
-    display:block;
-    margin:auto;
-}
-
 #main-logo-small {
     width:150px;
     height:auto;
@@ -114,6 +104,12 @@ content #main-logo {
     display:block;
     margin:auto;
     z-index:9999;
+}
+
+@media (max-width: 800px) {
+    #main-logo-small {
+        width:110px;
+    }
 }
 
 nav {
