@@ -47,12 +47,27 @@ content #download-list li > a, content #help-list li > a {
     display:inline-block;
     background-color:rgba(266, 230, 242, 0.4);
     padding:15px;
+    font-weight:bold;
     margin:5px;
+    border-left:4px solid rgba(235, 0, 113, 0.6);
+    max-width:40%;
+}
+
+content #download-list li > a small, content #help-list li > a small {
+    font-size:16px;
+    font-weight:normal;
+    font-variant:italic;
+    opacity:0.6;
+}
+
+content #download-list li > a br:first-of-type,
+content #help-list li > a br:first-of-type {
+    margin-bottom:-0.6em;
+    display:block;
 }
 
 content #download-list li > a:hover, content #help-list li > a:hover {
     background-color:#f49;
-    font-weight:bold;
     color:#fff;
 }
 
@@ -90,6 +105,7 @@ content h1:first-of-type {
     line-height:1.2em;
     padding-bottom:15px;
     padding-top:0px;
+    padding-right:35px;
 }
 
 h1 {font-size:23px; font-weight:bold;padding-top:12px;padding-bottom:10px;}
