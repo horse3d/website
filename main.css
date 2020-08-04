@@ -115,7 +115,7 @@ html,body{padding:0px; margin:0px;}
 #main-logo-small {
     width:150px;
     height:auto;
-    top:0px; left:20px;
+    top:15px; left:20px;
     position:fixed;
     display:block;
     margin:auto;
