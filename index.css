@@ -51,6 +51,7 @@ ul.promo-code-examples h3 {
     padding-top:0px;
     margin-top:0px;
     margin-bottom:0px;
+    line-height:1.3em;
 }
 
 @media (max-width: 750px) {

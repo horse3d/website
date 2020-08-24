@@ -21,6 +21,10 @@ em {
     padding-right:5px;
 }
 
+p {
+    line-height:1.5em;
+}
+
 html {
     font-size:20px;
     line-height:1.1em;
@@ -99,16 +103,23 @@ content:last-of-type {
 }
 
 content h1:first-of-type {
-    font-weight:normal;
-    font-size:35px;
-    font-family:'PatuaOne-Regular-h3d';
     line-height:1.2em;
     padding-bottom:15px;
     padding-top:0px;
     padding-right:35px;
 }
 
-h1 {font-size:23px; font-weight:bold;padding-top:12px;padding-bottom:10px;}
+h1 {
+    font-size:35px; font-weight:normal;
+    padding-top:35px; padding-bottom:10px;
+    font-family:'PatuaOne-Regular-h3d';
+}
+
+h2 {
+    font-size:30px; font-weight:normal;
+    padding-top:25px; padding-bottom:7px;
+    font-family:'PatuaOne-Regular-h3d';
+}
 
 html,body{padding:0px; margin:0px;}
 
