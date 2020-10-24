@@ -78,4 +78,8 @@ content h1:first-of-type {
     position:absolute !important;
     top:100px !important;
     color:#f22773d6 !important;
+    display:block;
+    width:calc(97% - 150px);
+    box-sizing: border-box;
+    text-align:center;
 }
