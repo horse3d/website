@@ -1,12 +1,13 @@
 Programming Language Checklist
 by Colin McMillen, Jason Reed, and Elly Fong-Jones, 2011-10-10.
+by Some /r/ProgrammingLanguages Chatters adding stuff, 2020-11-17.
 Filled out for Horse64
 
 You appear to be advocating a new:
 [ ] functional  [X] imperative  [X] object-oriented  [ ] procedural [ ] stack-based
 [ ] "multi-paradigm"  [ ] lazy  [X] eager  [ ] statically-typed  [X] dynamically-typed
-[ ] pure  [X] impure  [ ] non-hygienic  [ ] visual  [X] beginner-friendly
-[ ] non-programmer-friendly  [ ] completely incomprehensible
+[ ] pure  [X] impure  [ ] non-hygienic  [ ] visual  [X] concurrent  [ ] ownership-based
+[X] beginner-friendly   [ ] non-programmer-friendly  [ ] completely incomprehensible
 programming language.  Your language will not work.  Here is why it will not work.
 
 You appear to believe that:
@@ -22,6 +23,10 @@ You appear to believe that:
 [ ] Programmers love writing lots of boilerplate
 [ ] Specifying behaviors as "undefined" means that programmers won't rely on them
 [ ] "Spooky action at a distance" makes programming more fun
+[ ] No need for new features when code from 1990 runs unchanged
+[ ] Compilers are never run on anything but the highest spec workstations
+[ ] Continuations are the only control flow you really need
+[ ] Overriding built-in methods is a good idea
 
 Unfortunately, your language (has/lacks):
 [Y] comprehensible syntax  [N] semicolons  [N] significant whitespace  [N] macros
@@ -31,7 +36,8 @@ Unfortunately, your language (has/lacks):
 [kinda] algebraic datatypes  [Y] recursive types  [N] polymorphic types
 [N] covariant array typing  [N] monads  [N] dependent types
 [Y] infix operators  [N] nested comments  [Y] multi-line strings  [N] regexes
-[Y] call-by-value  [N] call-by-name  [Y] call-by-reference  [?] call-cc
+[Y] call-by-value  [N] call-by-name  [Y] call-by-reference
+[N] call-with-current-continuation  [N] borrow checker  [N] generics/templating
 
 The following philosophical objections apply:
 [ ] Programmers should not need to understand category theory to write "Hello, World!"
@@ -50,6 +56,7 @@ The following philosophical objections apply:
 [ ] Writing a compiler that understands English is AI-complete
 [ ] Your language relies on an optimization which has never been shown possible
 [ ] There are less than 100 programmers on Earth smart enough to use your language
+[ ] "Yes" is not a reasonable design guideline for whether to add a feature
 [X] __anything that'd be fast in C__ takes exponential time
 [X] __a func uses no global state___ is known to be undecidable
 
@@ -59,6 +66,7 @@ Your implementation has the following flaws:
 [ ] VMs do not work that way
 [ ] Compilers do not work that way
 [ ] Compilers cannot work that way
+[ ] AST Walking does not make a proper JIT
 [ ] Shift-reduce conflicts in parsing seem to be resolved using rand()
 [ ] You require the compiler to be present at runtime
 [X] You require the language runtime to be present at compile-time
@@ -96,6 +104,7 @@ Taking the wider ecosystem into account, I would like to note that:
 [ ] You have reinvented Java but worse
 [ ] You have reinvented C++ but worse
 [ ] You have reinvented PHP but worse
+[ ] You have reinvented Rust but worse
 [X] You have reinvented PHP better, but that's still no justification
 [ ] You have reinvented Brainfuck but non-ironically
 
@@ -103,5 +112,4 @@ In conclusion, this is what I think of you:
 [X] You have some interesting ideas, but this won't fly.
 [ ] This is a bad language, and you should feel bad for inventing it.
 [ ] Programming in this language is an adequate punishment for inventing it.
-
 
